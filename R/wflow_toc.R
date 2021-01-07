@@ -70,7 +70,7 @@ wflow_toc <- function(ignore_nav_bar = TRUE, clipboard = TRUE, project = ".") {
                    interactive() &&
                    clipr::clipr_available()
 
-  if (write_to_clip) {
+  if (clipboard) {
     clipr::write_clip(toc)
     message("The table of content of your project is on the clipboard.")
   } else {
